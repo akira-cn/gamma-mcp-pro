@@ -1,6 +1,6 @@
 {
   "name": "gamma-mcp-pro",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Professional MCP server for generating presentations, documents, and social content using Gamma API",
   "main": "dist/index.js",
   "bin": {

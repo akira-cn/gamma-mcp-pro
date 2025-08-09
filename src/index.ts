@@ -376,7 +376,7 @@ server.tool(
       logger.info('Gamma generation completed', { id: generationId });
 
       // Poll for completion
-      const maxRetries = 100;
+      const maxRetries = 1000;
       const retryInterval = 500; // 0.5 seconds
       let statusData: any = {};
       for (let attempt = 0; attempt < maxRetries; attempt++) {
