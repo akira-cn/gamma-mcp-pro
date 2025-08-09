@@ -1,0 +1,58 @@
+{
+  "name": "gamma-mcp-pro",
+  "version": "0.1.0",
+  "description": "Professional MCP server for generating presentations, documents, and social content using Gamma API",
+  "main": "dist/index.js",
+  "bin": {
+    "gamma-mcp-pro": "dist/index.js"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "format:check": "prettier --check src/**/*.ts",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "typescript",
+    "server",
+    "gamma",
+    "presentation",
+    "document",
+    "content-generation",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akira-cn/gamma-mcp-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akira-cn/gamma-mcp-pro/issues"
+  },
+  "homepage": "https://github.com/akira-cn/gamma-mcp-pro#readme",
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@types/node": "^24.2.1",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "eslint": "^9.33.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.2",
+    "zod": "^3.25.76"
+  }
+}
